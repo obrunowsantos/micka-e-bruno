@@ -45,6 +45,23 @@
                 transform: translateY(100vh);
             }
         }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #ff4d6d;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff1c40;
+        }
     </style>
 </head>
 <body>
@@ -62,6 +79,11 @@
     <p>Palavras não são o suficiente para demonstrar o que sinto por ti, então depois de ter pensado muito como ia fazer isso, só tenho uma pergunta a te fazer:</p>
     <h2>MIKA ELE DE SOUZA DA SILVA, VOCÊ QUER NAMORAR COMIGO?</h2>
     <img src="assets/foto_carta.jpg" alt="Nós dois">
+    
+    <div class="buttons">
+        <a href="https://wa.me/5598970259604?text=Agora%20eu%20sou%20sua" class="btn">SIM</a>
+        <button class="btn" onclick="alert('Ahh, nem brinca com isso! 🙈')">NÃO</button>
+    </div>
 </div>
 
 <script>
