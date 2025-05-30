@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Especial</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('assets/foto_fundo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 600px;
+            animation: fadeIn 3s;
+        }
+        img {
+            width: 100%;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        .heart {
+            position: absolute;
+            top: -10px;
+            animation: fall 5s infinite;
+            opacity: 0.8;
+            color: red;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="assets/careless_whisper.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+<div class="container">
+    <h1>Oi Micka</h1>
+    <p>Antes de mais nada eu que fiz isso, sou muito inteligente, eu sei, enfim, indo ao mais importante...</p>
+    <p>Quando te conheci, sendo sincero, não pensei que iríamos tão longe, vivemos tantas coisas juntos, coisas boas e coisas ruins também, mas enfim, o importante é que você nunca me abandonou, e esse amor que você sente por mim eu quero recompensar...</p>
+    <p>Eu gosto muito de você, ou em outras palavras, EU TE AMO! Sei que não sou o melhor em demonstrar e isso faz até com que você pense que não gosto de você, mas muito pelo o contrário, eu me sinto bem quando estou com você, que nem consigo explicar...</p>
+    <p>Palavras não são o suficiente para demonstrar o que sinto por ti, então depois de ter pensado muito como ia fazer isso, só tenho uma pergunta a te fazer:</p>
+    <h2>MIKA ELE DE SOUZA DA SILVA, VOCÊ QUER NAMORAR COMIGO?</h2>
+    <img src="assets/foto_carta.jpg" alt="Nós dois">
+</div>
+
+<script>
+    for (let i = 0; i < 30; i++) {
+        let heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        heart.innerHTML = '❤️';
+        heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        document.body.appendChild(heart);
+    }
+</script>
+
+</body>
+</html>
